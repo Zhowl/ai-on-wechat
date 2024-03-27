@@ -6,17 +6,17 @@ services:
     security_opt:
       - seccomp:unconfined
     environment:
-      OPEN_AI_API_KEY: 'YOUR API KEY'
+      gemini_api_key: 'YOUR API KEY'
       MODEL: 'gpt-3.5-turbo'
       PROXY: ''
-      SINGLE_CHAT_PREFIX: '["bot", "@bot"]'
-      SINGLE_CHAT_REPLY_PREFIX: '"[bot] "'
+      SINGLE_CHAT_PREFIX: '[""]'
+      SINGLE_CHAT_REPLY_PREFIX: '"[gemini] "'
       GROUP_CHAT_PREFIX: '["@bot"]'
-      GROUP_NAME_WHITE_LIST: '["ChatGPT测试群", "ChatGPT测试群2"]'
+      GROUP_NAME_WHITE_LIST: '["ALL_GROUP"]'
       IMAGE_CREATE_PREFIX: '["画", "看", "找"]'
       CONVERSATION_MAX_TOKENS: 1000
       SPEECH_RECOGNITION: 'False'
-      CHARACTER_DESC: '你是ChatGPT, 一个由OpenAI训练的大型语言模型, 你旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。'
+      CHARACTER_DESC: '我是 Gemini，一个由 Google 开发的多模态 AI 模型。我的职责是尽我所能提供信息并回答问题。'
       EXPIRES_IN_SECONDS: 3600
       USE_GLOBAL_PLUGIN_CONFIG: 'True'
       USE_LINKAI: 'False'
